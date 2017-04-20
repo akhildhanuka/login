@@ -1,0 +1,18 @@
+<div class="additional-login-options">
+    <div class="forgotten-password">
+        <a class="button" target="_self"
+           title="Recover Password" [routerLink]="['/forgottenpassword']" [queryParams]="{userType:userType}">
+            Forgotten your password?
+        </a>
+    </div>
+    <div class="sso-buttons row">
+        <div *ngFor="let button of sso" class="col-xs-6">
+
+            <div class="sso-login">
+                <a class="button" [href]="button.url" target="_blank">
+                    <img [src]="button.icon" [alt]="button.label" width="100%">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

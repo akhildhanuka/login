@@ -1,0 +1,241 @@
+.recovery-page{
+  padding-top: 120px;
+  .info{
+    //padding: 25px 25px 25px 110px;
+    font-family: 'MuseoSlab500Regular', arial, helvetica, sans-serif;
+
+    .content-box{
+      background-color: #fff;
+      margin: 0px 25px 25px 140px;
+      padding: 10px 25px 25px 25px;
+    }
+
+    h1,
+    h3 span{
+      color: #3fb1e1;
+    }
+
+    h1{
+      font-size: 34px;
+      line-height: 48px;
+      font-weight: 400;
+      margin-top: 0px;
+      padding-top: 20px;
+    }
+
+    h3{
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: normal;
+    }
+
+    .contact-us-btn{
+      background-color: #e4b548;
+      color: #ffffff;
+      padding: 9px 20px;
+      line-height: 14px;
+      font-size: 12px;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all .2s;
+
+      &:hover{
+        background-color: #3fb1e1;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .back-button {
+    margin-top: 50px;
+    text-align: center;
+    width: 430px;
+  }
+
+  .button{
+    background-color: $blue-color;
+    color: #ffffff;
+    padding: 9px 20px;
+    line-height: 14px;
+    font-size: 12px;
+    text-decoration: none;
+    transition: all .2s;
+
+    &:hover{
+      background-color: #1e73be;
+      text-decoration: none;
+    }
+  }
+
+  .recovery-form .snippet-recover-password-container {
+    margin-left: 0px;
+    margin-top: 80px;
+  }
+}
+
+.snippet-recover-password-container{
+  box-shadow: 0px 0px 12px #000;
+  background-color: #fff;
+  width: 430px;
+  margin-left: 50px;
+  margin-top: 50px;
+
+  #recover-password-error-massage{
+    font: 16px Arial;
+    color: red;
+    margin-bottom: 15px;
+  }
+  .thanks-msg{
+    font: 16px Arial;
+    color: green;
+    margin: 10px;
+    padding: 20px;
+  }
+  .btn-primary.focus, .btn-primary:focus {
+    background-color: #286090;
+    border-color: #122b40;
+    color: #fff;
+    border-radius: 0px;
+  }
+  .btn-primary.active,
+  .btn-primary:active,
+  .btn-primary:hover,
+  .open > .dropdown-toggle.btn-primary {
+    background-color: #286090;
+    border-color: #204d74;
+    color: #fff;
+    border-radius: 0px;
+  }
+  .modal.fade .modal-dialog {
+    transform: translate(0px, -25%);
+    transition: transform 0.3s ease-out 0s;
+  }
+  .modal.in .modal-dialog {
+    transform: translate(0px, 0px);
+  }
+  .modal-dialog{
+    width: 400px;
+  }
+  .modal-content {
+    border-radius: 0px;
+  }
+  .modal.fade .modal-dialog {
+    transform: translate(0px, -25%);
+    transition: transform 0.3s ease-out 0s;
+  }
+  .modal.in .modal-dialog {
+    transform: translate(0px, 0px);
+  }
+  .modal-header{
+    background: #278bcb none repeat scroll 0 0;
+    border-bottom: 1px solid #e5e5e5;
+    color: #fff;
+    min-height: 16.43px;
+    padding: 15px;
+    h4{
+      color: white;
+      font-size: 20px;
+      margin: 0px 0px;
+    }
+  }
+  button.close {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 0 none;
+    cursor: pointer;
+    padding: 0;
+  }
+  .close {
+    color: #fff;
+    float: right;
+    font-size: 35px;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 1;
+    font-weight: normal;
+  }
+  .modal-body{
+    padding: 15px;
+    position: relative;
+  }
+  .form-control {
+    background-color: #fff;
+    border: 1px solid #278bcb;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #656565;
+    font-size: 18px;
+    height: 40px;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 93%;
+    border-radius: 0px;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  .modal-footer{
+    border-top: 1px solid #e5e5e5;
+    padding: 15px;
+    text-align: right;
+    border-radius: 0px;
+  }
+  .btn-primary {
+    background-color: #f4b800;
+    border-color: #2e6da4;
+    color: #fff;
+    width: 100%;
+    border-radius: 0px;
+  }
+  .btn {
+    -moz-user-select: none;
+    border: medium none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 9px 0;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .back-button{
+    margin: 0px;
+    padding: 12px;
+    a{
+      text-decoration: underline;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+      color: #000099;
+      &:hover {
+        color:#000099;
+      }
+    }
+
+  }
+}
+
+
+/* media queries */
+@media only screen and (max-width: 1024px) {
+  .entry-background {
+    height: inherit;
+  }
+
+  .recovery-page .info .content-box{
+    margin: 0px 12%;
+  }
+
+  .recovery-page .col-md-7,
+  .recovery-page .col-md-5{
+    width: 100%;
+  }
+
+  .recovery-page .recovery-form .snippet-recover-password-container{
+    margin: 80px auto;
+  }
+  .recovery-page .back-button {
+    width: auto;
+    margin-bottom: 20px;
+  }
+}

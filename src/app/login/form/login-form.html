@@ -1,0 +1,59 @@
+<div id="inline-login" style="width: 430px;">
+  <div class="snippet-login-container inline-login">
+    <form id="login-form" name="pppWidgetLoginForm" action="" autocomplete="on">
+
+      <div class="login-form-header">
+        <h4 class="login-title" data-fontsize="20" data-lineheight="20" translate>login.title</h4>
+      </div>
+      <div class="login-body">
+        {{i18n}}
+        <div id="login-error-massage">{{errorMessage}}</div>
+        <div class="form-group">
+          <input
+            id="ppp-username"
+            required
+            name="username"
+            [placeholder]="'login.user-name-placeholder' | translate"
+            type="text"
+            class="form-control"
+            [(ngModel)]="username"
+            autocomplete="on"
+          >
+        </div>
+        <div class="form-group">
+          <input
+            (keyup)="$event.keyCode == 13 && login()"
+            required
+            name="Password"
+            type="password"
+            [(ngModel)]="password"
+            class="form-control"
+            id="ppp-user-password"
+            [placeholder]="'login.user-password-placeholder' | translate"
+            autocomplete="off"
+          >
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" class="css-checkbox" id="ppp-terms" name="TermsAgreed"
+                   [checked]="termsAgreed" (change)="termsAgreed = $event.target.checked">
+            <label for="ppp-terms" name="checkbox2_lbl" class="css-label lite-green-check"></label>
+            <div [innerHTML]="'login.terms' | translate:{URL: 'www.google.com'}"></div>
+          </label>
+        </div>
+      </div>
+      <div class="login-footer">
+        <button id="ppp-sign-in"
+                class="btn btn-primary"
+                type="button"
+                (click)="login()"
+                translate
+        >
+          login.signin-btn
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+

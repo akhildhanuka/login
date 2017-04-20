@@ -1,0 +1,442 @@
+$blue-color: #3fb1e1;
+
+html, body {
+  $font_1: 'Poppins';
+  width: 100%;
+  height: 100%;
+  font-family: $font_1;
+  margin: 0;
+  padding: 0;
+}
+
+/* ref : https://css-tricks.com/snippets/css/clear-fix/ */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+.entry-background {
+  //position: fixed;
+  height: 100vh;
+  width: 100%;
+  min-width: 450px;
+
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: initial;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: fixed;
+  background-origin: initial;
+  background-clip: initial;
+  //background-color: initial;
+  background-color: #6f9ba8;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.login-form {
+  padding-top: 120px;
+}
+
+.login-header {
+  font-size: 34px;
+  line-height: 48px;
+  color: white;
+  font-weight: normal;
+  text-align: center;
+}
+
+.no-row-margin {
+  margin: 0;
+}
+
+.student-background {
+  //background-image: url('./../../../src/assets/Mathletics-Secondary-background2.jpeg');
+}
+
+.teacher-background {
+  //background-image: url('./../../../src/assets/Mathletics-Secondary-background1.jpeg');
+}
+
+.parent-background {
+  //background-image: url('./../../../src/assets/Mathletics-Secondary-background1.jpeg');
+}
+
+/* close commented backslash hack */
+.login-background {
+
+}
+
+.page-header {
+  top: 0;
+  background-color: #f3f3f3;
+  position: fixed;
+  box-shadow: 0 0 1px 2px rgba(66, 65, 65, 0.13);
+  width: 100%;
+  height: 82px;
+  z-index: 9999;
+
+  img {
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 90px;
+  }
+}
+
+.marketing-box {
+  width: 430px;
+  margin: 20px auto;
+}
+
+#marketing-box {
+  text-align: right;
+  padding: 0 20px 0 0;
+
+  .banner-image {
+    width: 340px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(244, 193, 50);
+    box-shadow: rgba(0, 0, 0, 0.298039) 2px 3px 7px;
+    transition: all 0.8s;
+
+    &:hover {
+      transform: scale(1.06, 1.06);
+      box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.56);
+    }
+  }
+
+  &.user-type-parent {
+    .banner-image {
+      width: 400px;
+    }
+  }
+
+  .marketing-content {
+    padding-left: 31%;
+
+    .register-now-button {
+      margin-top: 35px;
+      text-align: center;
+    }
+
+    ul {
+      padding: 0px;
+      margin: 0px;
+      list-style: none;
+
+      li {
+        margin-bottom: 10px;
+      }
+      .user-icon {
+        ///background-image: url("./../../../src/assets/user.png");
+        background-repeat: no-repeat;
+        background-color: $blue-color;
+        background-size: 47%;
+        background-position: 8px 6px;
+
+        display: inline-block;
+        height: 28px;
+        width: 28px;
+        text-align: center;
+        border-radius: 50%;
+        vertical-align: middle;
+        float: left;
+        margin-top: 3px;
+      }
+
+      p {
+        margin-left: 40px;
+        text-align: left;
+        color: white;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .blue-color {
+        color: $blue-color;
+      }
+    }
+  }
+}
+
+.additional-login-options {
+  .forgotten-password {
+    text-align: center;
+    margin-bottom: 40px;
+    .button {
+      background-color: $blue-color;
+      color: #ffffff;
+      padding: 9px 20px;
+      line-height: 14px;
+      font-size: 12px;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all .2s;
+
+      &:hover {
+        background-color: #1e73be;
+        text-decoration: none;
+      }
+    }
+  }
+  .sso-login {
+    text-align: center;
+
+    a {
+      display: inline-block;
+      height: 38px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    img {
+      width: 200px;
+    }
+  }
+
+}
+
+#inline-login {
+  width: 430px;
+  margin: 20px 0px 20px 30px;
+
+  .snippet-login-container {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    -ms-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    -o-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    background-color: #fff;
+
+    margin-bottom: 40px;
+  }
+
+  .snippet-login-container #login-error-massage {
+    font: 16px Arial;
+    color: red;
+    margin-bottom: 10px
+  }
+
+  .snippet-login-container .btn-primary.focus, .snippet-login-container .btn-primary:focus {
+    background-color: #286090;
+    border-color: #122b40;
+    color: #fff;
+    border-radius: 0
+  }
+
+  .snippet-login-container .btn-primary.active, .snippet-login-container .btn-primary:active, .snippet-login-container .btn-primary:hover, .snippet-login-container .open > .dropdown-toggle.btn-primary {
+    background-color: #286090;
+    border-color: #204d74;
+    color: #fff;
+    border-radius: 0
+  }
+
+  .snippet-login-container .modal-dialog {
+    width: 400px
+  }
+
+  .snippet-login-container .modal-content {
+    border-radius: 0
+  }
+
+  .snippet-login-container .modal.fade .modal-dialog {
+    transform: translate(0, -25%);
+    transition: transform .3s ease-out 0s
+  }
+
+  .snippet-login-container .modal.in .modal-dialog {
+    transform: translate(0, 0)
+  }
+
+  .snippet-login-container .login-form-header, .snippet-login-container .modal-header {
+    background: #278bcb;
+    border-bottom: 1px solid #e5e5e5;
+    color: #fff;
+    min-height: 16.43px;
+    padding: 15px
+  }
+
+  .snippet-login-container .login-form-header h4, .snippet-login-container .modal-header h4 {
+    color: #fff;
+    font-size: 20px;
+    margin: 0
+  }
+
+  .snippet-login-container button.close {
+    background: 0 0;
+    border: 0;
+    cursor: pointer;
+    padding: 0
+  }
+
+  .snippet-login-container .close {
+    color: #fff;
+    float: right;
+    font-size: 35px;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 1;
+    font-weight: 400
+  }
+
+  .snippet-login-container .login-body, .snippet-login-container .modal-body {
+    padding: 15px;
+    position: relative
+  }
+
+  .snippet-login-container .form-control {
+    background-color: #fff;
+    border: 1px solid #278bcb;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .075) inset;
+    color: #656565;
+    font-size: 18px;
+    height: 40px;
+    padding: 6px 12px;
+    transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s;
+    width: 92%;
+    border-radius: 0
+  }
+
+  .snippet-login-container .form-group {
+    margin-bottom: 15px
+  }
+
+  .snippet-login-container .checkbox, .snippet-login-container .radio {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: relative
+  }
+
+  .snippet-login-container input.css-checkbox[type=checkbox]:checked + label.css-label {
+    background-position: 0 0
+  }
+
+  .snippet-login-container input.css-checkbox[type=checkbox] {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px
+  }
+
+  .snippet-login-container .checkbox label, .snippet-login-container .radio label {
+    padding-left: 0;
+    color: $blue-color;
+    font-size: 12px;
+    line-height: 30px
+  }
+
+  .snippet-login-container .checkbox label a, .snippet-login-container .radio label a {
+    color: #000
+  }
+
+  .snippet-login-container .checkbox label a:hover, .snippet-login-container .radio label a:hover {
+    color: $blue-color
+  }
+
+  .snippet-login-container input.css-checkbox[type=checkbox] + label.css-label {
+    background-position: 0 -35px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    font-size: 15px;
+    height: 35px;
+    line-height: 15px;
+    margin-right: 7px;
+    padding-left: 35px;
+    vertical-align: middle
+  }
+
+  .snippet-login-container .lite-green-check {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAABGCAIAAADJgrrnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuOWwzfk4AAAH9SURBVFhH7Ze9S8NAGIc7Kq666Cy4Ka7ix6Rubg46uYiTm06Ci/4BDm6OIg4tRRCqtCiIFFGKYkX6odUGq0X8QMG6CPqzd63XXC5fl1TEe/hBk/Te9yG53EECgWCxTtGf+xfyM3P6upR98yPoXGPCpU9/QGdlco0yyaBMMiiTDMokgzLJoEwyKJMMyiTD75nq961Rj+jP/Yv+3L/oz/0L+VFfn074y6ZC6WNde0dwQC+V8dKE1iu5l8bQFWnVE02zMi9Nq/lKr0o6I6mqzDMTOjaFcrQXEzxGMsAbEzRtG2naqDZemqDpiqRoFy6emaAZ3MnSFlzmk4/ezBO6jMfztJ7L5OFNVQPcm9BlOnFHi7mM7F2yGuDShC5zyQdayQXTptMAoQlDsQyHYsd924mFs1u2EseL58+0jEtLOMNrgNC0nH2if5QzEPup51comzWtRIbpMDahaUOQbirVdGx+PxPEcIWS4F4NbwgYm7AI6NXaNIczrYIVisye3Is0wJnJJHjdTTTA2ISa7i3hsufTz8yiCGMTQKXJHsOmvTx/pMoEoQmgvjcqnBUSvB12NMDMBNBlePeCjjAK3ng61AoLE4BsdF//xpOwG6gl1iaAdhMHGh1XydRRwb4G2DIBNGX307H4tSMNsGsCaI11RuJUAxyYJPkPJvX16SLB4heRD92jfGT0swAAAABJRU5ErkJggg==)
+  }
+
+  .snippet-login-container .login-footer, .snippet-login-container .modal-footer {
+    border-top: 1px solid #e5e5e5;
+    padding: 15px;
+    text-align: right;
+    border-radius: 0
+  }
+
+  .snippet-login-container .btn-primary {
+    background-color: #f4b800;
+    border-color: #2e6da4;
+    color: #fff;
+    width: 100%;
+    border-radius: 0
+  }
+
+  .snippet-login-container .btn {
+    -moz-user-select: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 9px 0;
+    text-align: center;
+    white-space: nowrap
+  }
+
+  body .show-on-top {
+    z-index: 99999
+  }
+}
+
+/* media queries */
+@media only screen and (max-width: 1024px) {
+  .entry-background {
+    height: inherit;
+  }
+
+  #marketing-box {
+    padding: 0;
+  }
+
+  #marketing-box .register-now-button a{
+    display: block;
+  }
+
+  #marketing-box .marketing-content{
+    text-align: center;
+    padding-left: 0;
+  }
+
+  #inline-login{
+    margin: 20px auto 30px;
+  }
+
+  .col-sm {
+    width: 100%;
+  }
+}

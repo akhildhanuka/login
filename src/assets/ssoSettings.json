@@ -1,0 +1,19 @@
+{
+  "ButtonList": [
+    {
+      "label": "Sign in with Google",
+      "url": "https://sso.3plearning.com/Google",
+      "icon" : "//west.cdn.mathletics.com/html/login/sso-google.png",
+      "signOut": "https://accounts.google.com/logout",
+      "data": "Google"
+    },
+    {
+      "label": "Sign in with Office365",
+      "icon" : "//west.cdn.mathletics.com/html/login/sso-office365.png",
+      "url": "https://sso.3plearning.com/Office365SSO",
+      "signOut": "https://login.microsoftonline.com/logout.srf",
+      "data": "Office365"
+    }
+  ],
+  "TokenKeyStart": "(?<=token\\=)(.*)"
+}

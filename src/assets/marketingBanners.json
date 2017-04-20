@@ -1,0 +1,42 @@
+{
+  "parent": {
+    "marketing-texts": [
+      "A great way to support your child’s learning. Monitor homework tasks, receive reports on progress and celebrate their successes by printing certificates at home!",
+      "Extra Mathletics practise at home can make all the difference in a child’s maths progress."
+    ],
+    "banners": [
+      {
+        "source": "//west.cdn.mathletics.com/html/marketing/Mathletics-Parent-Register-Now-button.png",
+        "link": "http://www.mathletics.com/parents"
+      }
+    ]
+  },
+  "teacher": {
+    "marketing-texts": [
+    ],
+    "banners": [
+      {
+        "source": "//west.cdn.mathletics.com/html/marketing/teacher-help-button-mathletics.png",
+        "link": "http://www.mathletics.com/help"
+      },
+      {
+        "source": "//west.cdn.mathletics.com/html/marketing/Mathletics-Free-Trial-panel.png",
+        "link": "http://www.mathletics.com/freetrial"
+      }
+    ]
+  },
+  "student": {
+    "marketing-texts": [
+    ],
+    "banners": [
+      {
+        "source": "//west.cdn.mathletics.com/html/marketing/parent.png",
+        "link": "http://www.mathletics.com/homesubscriptions"
+      },
+      {
+        "source": "//west.cdn.mathletics.com/html/marketing/Mathletics-HOF-Homepage-button-5.png",
+        "link": "http://www.mathletics.com/halloffame"
+      }
+    ]
+  }
+}

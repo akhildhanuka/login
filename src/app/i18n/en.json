@@ -1,0 +1,47 @@
+{
+  "login": {
+    "title": "Sign in to Mathletics",
+    "user-name-placeholder": "Username",
+    "user-password-placeholder": "Password",
+    "terms": "I agree to the <a href='{{URL}}' target='_blank'>terms and conditions</a> to enter Mathletics",
+    "signin-btn": "Let me in!",
+    "signing-in": "Signing...",
+    "error-user-name": "Enter the user name",
+    "error-password": "Enter the password",
+    "error-password-length": "Password must be at least 4 characters long.",
+    "error-terms": "Please check terms and conditions to continue...",
+    "error-auth-credentials": "Please enter correct username or password",
+    "forgot-password": {
+      "title": "Forgotten your password?",
+      "label": "Forgotten your password?"
+    }
+  },
+  "recover-password": {
+    "title": "Recover Password",
+    "email-placeholder": "Your email",
+    "submit-btn": "Submit",
+    "error-email": "The email address entered is not valid. Please try again.",
+    "thanks-msg": "Thank you, an email will be sent to you shortly.",
+    "back-btn": "Back to Login",
+    "info": {
+      "heading-one": "Forgotten your password?",
+      "line-one": "Don&acute;t worry, it happens to the best of us! Fortunately, we&acute;re here to help.",
+      "line-two": "<span>If you are a teacher or parent with a Mathletics account, </span> we can send the details of your username and password to the email address you have registered with us (this will have been registered when your account was created). Enter your registered email address in the panel on the right &#8230;",
+      "line-three": "For security and privacy reasons, unfortunately we are currently unable to send login details to students. <span>If you are a student</span> and have forgotten your username and/or password, please speak to your teacher or parent.",
+      "heading-two": "Still need help?",
+      "line-four": "If you are a parent or teacher and have been unable to retrieve your details, or do not have an email address linked to your Mathletics account, contact our friendly team who will be very pleased to help you.",
+      "contact-us-btn": "Contact us"
+    }
+  },
+  "marketing": {
+    "parent": {
+      "header": "Sign in to the Mathletics Family Console"
+    },
+    "student": {
+      "header": "Sign in to the Mathletics Student Console"
+    },
+    "teacher": {
+      "header": "Sign in to the Mathletics Teacher Console"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+<div class="recovery-form">
+  <div class="snippet-recover-password-container">
+    <div class="modal-header">
+      <h4 class="modal-title" data-fontsize="20" data-lineheight="20" translator="recover-password.title"></h4>
+    </div>
+    <div id="ppp-recover-form-container">
+      <div class="modal-body">
+        <div id="recover-password-error-massage" ng-show="recovery.error" >{{recovery.errorMessage}}</div>
+        <div class="form-group">
+          <input type="text" class="form-control" ng-model="recovery.email" name="recoverPassword" id="ppp-recover-email"
+                 placeholder="{{i18n['email-placeholder']}}">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="ppp-recover-password-submit"
+                ng-click="recovery.recover()"
+                class="btn btn-primary"
+                type="button"
+                translator="recover-password.submit-btn"
+        ></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="back-button">
+    <a class="button" target="_self" title="{{i18n['back-btn']}}"
+       ui-sref="login.user({userType: recovery.userType})"
+       translator="recover-password.back-btn">
+    </a>
+  </div>
+</div>

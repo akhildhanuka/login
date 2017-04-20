@@ -1,0 +1,15 @@
+<div id="marketing-box">
+    <div class="marketing-content">
+        <ul *ngIf="marketingTexts">
+            <li *ngFor="let text of marketingTexts" class="clearfix">
+                <div class="user-icon"></div>
+                <p>{{text}}</p>
+            </li>
+        </ul>
+        <div class="register-now-button">
+            <a *ngFor="let banner of bannerImages" [href]="banner.link" target="_blank">
+                <img class="banner-image" [src]="banner.source">
+            </a>
+        </div>
+    </div>
+</div>
